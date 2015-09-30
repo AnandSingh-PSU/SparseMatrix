@@ -13,6 +13,9 @@ class SparseMatrix {
 
 public:
 
+	/** 
+         * No argument constructor
+         */
 	SparseMatrix();
 
 	~SparseMatrix();
