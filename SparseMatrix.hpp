@@ -20,11 +20,18 @@ public:
 
 	~SparseMatrix();
 
+	/**
+         * Set an element
+         * @param i row index
+         * @param j column index 
+         * @param value value to set
+         */
 	void setElement(size_t i, size_t j, double value);
 
 	double getElement(size_t i, size_t j) const;
 
-	SparseMatrix operator+(double SparseMatrix& b) 
+	SparseMatrix operator+(const SparseMatrix& b);
+
 
 private:
 	
